@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Panel from 'react-bootstrap/lib/Panel';
 import Accordion from 'react-bootstrap/lib/Accordion';
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://api.trello.com/1/lists/585ec4acf50a5396842199d2/cards';
 
 
 class CompanyList extends Component {
@@ -14,7 +14,7 @@ class CompanyList extends Component {
   }
   
   componentDidMount() {
-    axios.get(`${API_URL}/companies`)
+    axios.get(`${API_URL}`)
     .then(response => this.setState({
       companies: response.data,
     }))
@@ -29,11 +29,11 @@ class CompanyList extends Component {
             <Panel
               header={<span>
                 {company.name}
-                {company.free ?
+                {company.labels.length > 0 && company.labels.filter(label => label.id === '585ec6171cd9b8b707f38bb1').length > 0 ?
                   (<span className="badge bg-success pull-right">Gratuit</span>)
                   : null
                 }
-                {company.golfbag ?
+                {company.labels.length > 0 && company.labels.filter(label => label.id === '585ec62c1cd9b8b707f38bbb').length > 0 ?
                   (<span className="badge pull-right">Golfbag</span>)
                   : null
                 }
@@ -41,7 +41,7 @@ class CompanyList extends Component {
               key={index}
               eventKey={index}
               >
-              {company.description}
+              {company.desc}
             </Panel>
           ))}
         </Accordion>)
