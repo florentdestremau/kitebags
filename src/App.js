@@ -14,12 +14,10 @@ class App extends Component {
             L'app qui te dit pour combien tu pourras transporter ton kite dans l'avion !
           </p>
         </div>
-        <h3 className="App-intro">
-          Voici la liste des compagnies aériennes référencées :
-        </h3>
         <section>
           <CompanyList />
         </section>
+        <hr />
         <footer>
           <h3>Comment ça fonctionne ?</h3>
           <p>
@@ -31,6 +29,12 @@ class App extends Component {
             <li><strong className="badge">Golfbag</strong> : la compagnie ne facture pas que les sacs de golf, attention au marquage</li>
             <li><strong className="badge bg-danger">60&nbsp;€</strong> : la compagnie facture 60&nbsp;€ par trajet</li>
           </ul>
+          <h3>J'ai pas trouvé ma compagnie / les prix ont changé !!</h3>
+          <p>
+            Merci de me rejoindre sur mon <a href="https://trello.com/b/aRlm03GY/voler-avec-son-matos" target="_blank"><i className="glyphicon glyphicon-new-window"></i> board trello</a>.
+            Tout est stocké dessus, tu pourras m'aider à contribuer !
+          </p>
+          <p className="small text-right">© 2017 Florent Destremau</p>
         </footer>
       </div>
     );
