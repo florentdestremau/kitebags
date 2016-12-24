@@ -18,6 +18,10 @@
   background-color: green !important;
 }
 
+.bg-danger {
+  background-color: #ff0000 !important;
+}
+
 .badge {
   margin-right: 5px;
 }
