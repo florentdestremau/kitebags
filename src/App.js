@@ -7,17 +7,22 @@ class App extends Component {
     return (
       <div className="App">
         <div className="jumbotron App-header">
-          <p>
-            Bienvenue sur
-          </p>
           <h2>
-            Voler avec mon boardbag
+            Kitebags
           </h2>
+          <p>
+            L'app qui te dit comment transporter ton kite dans l'avion !
+          </p>
         </div>
         <h3 className="App-intro">
           Voici la liste des companies aériennes référencées :
         </h3>
-        <CompanyList />
+        <section>
+          <CompanyList />
+        </section>
+        <footer>
+          <h3>Comment ça fonctionne ?</h3>
+        </footer>
       </div>
     );
   }
