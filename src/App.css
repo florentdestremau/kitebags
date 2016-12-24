@@ -13,3 +13,11 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.bg-success {
+  background-color: green !important;
+}
+
+.badge {
+  margin-right: 5px;
+}
