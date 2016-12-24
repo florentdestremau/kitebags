@@ -11,7 +11,7 @@ class App extends Component {
             Kitebags
           </h2>
           <p>
-            L'app qui te dit comment transporter ton kite dans l'avion !
+            L'app qui te dit pour combien tu pourras transporter ton kite dans l'avion !
           </p>
         </div>
         <h3 className="App-intro">
