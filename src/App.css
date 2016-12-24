@@ -1,21 +1,12 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 5s linear;
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.App-header.jumbotron {
+  background-color: darkblue;
   color: white;
-}
-
-.App-intro {
-  font-size: large;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
