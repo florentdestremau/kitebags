@@ -33,8 +33,16 @@ class CompanyList extends Component {
                   (<span className="badge bg-success pull-right">Gratuit</span>)
                   : null
                 }
+                {company.labels.length > 0 && company.labels.filter(label => label.id === '585ec48e1cd9b8b707f38a29').length > 0 ?
+                  (<span className="badge bg-warning pull-right">+1 bagage</span>)
+                  : null
+                }
                 {company.labels.length > 0 && company.labels.filter(label => label.id === '585ec62c1cd9b8b707f38bbb').length > 0 ?
                   (<span className="badge pull-right">Golfbag</span>)
+                  : null
+                }
+                {company.labels.length > 0 && company.labels.filter(label => label.id === '585ec48e1cd9b8b707f38a2b').length > 0 ?
+                  (<span className="badge bg-danger pull-right">Payant</span>)
                   : null
                 }
               </span>}

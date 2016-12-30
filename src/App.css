@@ -22,6 +22,11 @@
   background-color: #ff0000 !important;
 }
 
+.bg-warning {
+  background-color: yellow !important;
+  color: #444444 !important;
+}
+
 .badge {
   margin-right: 5px;
 }
