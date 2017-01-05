@@ -35,8 +35,10 @@ class App extends Component {
             Tout est stocké dessus, tu pourras m'aider à contribuer !
           </p>
           <p>
-            Comme me l'a fait remonter @Raph, on peut toujours se référer à <a href="http://www.kitetrip-planner.com/fr/le-blog/22-divers/699-top-10-des-franchises-bagages.html">cet article</a> qui date de deux ans pour avoir une idée générale.
-            Les données sur kitebags sont plus récentes.
+            Comme me l'a fait remonter @Raph, on peut toujours se référer à <a href="http://www.kitetrip-planner.com/fr/le-blog/22-divers/699-top-10-des-franchises-bagages.html" target="_blank">cet article</a> qui date de deux ans pour avoir une idée générale.
+          </p>
+          <p>
+            Sinon @Thomas m'a fait remonté <a href="http://www.carvemag.com/2017/01/2017-surfers-airline-baggage-fees-guide/" target="_blank">cet article, plus récent</a>
           </p>
           <p className="small text-right">© 2017 Florent Destremau</p>
         </footer>
